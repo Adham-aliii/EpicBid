@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import styles from './ProfileInfo.module.css';
 import Profile from '../Profile/Profile';
-import cornerr from '../../assets/imgs/cornerr.png';
+import cornerr from '../../assets/imgs/Cornerr.png';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../Context/UserContext';
 import ProfileAuctions from '../ProfileAuctions/ProfileAuctions';
