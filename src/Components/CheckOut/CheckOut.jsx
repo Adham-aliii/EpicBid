@@ -54,7 +54,7 @@ export default function Checkout() {
             <Profile headerText='Checkout'/>
             <div className={styles.checkoutContainer}>
                 <div className={styles.header}>
-                    <h1>Thank You For Your Purchase</h1>
+                    <h1>Thank You For Your Purchase ❤️</h1>
                     <h2>Your order has been successfully processed</h2>
                     <h3>Here are the details</h3>
                 </div>
