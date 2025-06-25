@@ -48,7 +48,7 @@ function App() {
                 <div className="app">
                   <Navbar />
                   <main className="main-content">
-                    <Routes>
+                    <AppRoutes>
                       <Route path="/" element={<Home />} />
                       <Route path="/products" element={<Products />} />
                       <Route path="/categories" element={<Categories />} />
@@ -77,7 +77,7 @@ function App() {
                       <Route path="/checkout" element={<CheckOut />} />
                       <Route path="/order-details" element={<OrderDetails />} />
                       <Route path="*" element={<NotFound />} />
-                    </Routes>
+                    </AppRoutes>
                   </main>
                   <Footer />
                   <ErrorBoundary>
