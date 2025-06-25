@@ -1,0 +1,113 @@
+/* Tips Section */
+.tips-section {
+    display: flex;
+    padding: 50px 120px;
+    align-items: center;
+    gap: 40px 100px;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tip Item */
+.tip-item {
+    align-self: stretch;
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    /* Smooth hover effect */
+}
+
+.tip-item:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+/* Tip Icon */
+.tip-icon {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tip-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Tip Title */
+.tip-title {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+.icon-color {
+    color: #D09423;
+}
+
+/* Specific Item Widths */
+.shop-item {
+    width: 126px;
+}
+
+.support-item {
+    width: 126px;
+    white-space: nowrap;
+}
+
+.returns-item {
+    width: 187px;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .tips-section {
+        padding: 0 20px;
+        gap: 20px 50px;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .tip-icon {
+        width: 60px;
+        /* Smaller circle for smaller screens */
+        height: 60px;
+        font-size: 24px;
+        /* Adjusted icon size */
+    }
+
+    .tip-title {
+        font-size: 0.9rem;
+        /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tips-section {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .tip-item {
+        width: 100%;
+        /* Full width for each item */
+    }
+}

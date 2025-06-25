@@ -1,0 +1,486 @@
+/* ProfileAuctions.module.css */
+
+/* Reuse wrapper and profileContainer from Address styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.profileContainer {
+    display: flex;
+    width: 80%;
+    max-width: 1400px;
+    min-height: 70vh;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Reuse sidebar styles from Address */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(145deg, #2D5356 0%, #1a3a3d 100%);
+    padding: 2rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 0;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navLink i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.navLink:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+    color: white !important;
+    background: rgba(208, 148, 35, 0.15) !important;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #D09423;
+}
+
+/* Main Content */
+.mainContent {
+    flex: 1;
+    padding: 2.5rem;
+    background: #f8f9fa;
+}
+
+.mainHeader {
+    color: #2D5356;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.mainHeader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 3px;
+    background: #D09423;
+    border-radius: 3px;
+}
+
+/* Sort Container */
+.sortContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.sortContainer label {
+    font-weight: 500;
+    color: #555;
+}
+
+.sortSelect {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    font-size: 0.9rem;
+}
+
+/* Auction Cards */
+.auctionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.auctionCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #D09423;
+}
+
+.auctionCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auctionCard h2 {
+    color: #2D5356;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.auctionDetails {
+    margin-bottom: 1.5rem;
+}
+
+.auctionDetails p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.auctionDetails span {
+    font-weight: 500;
+    color: #333;
+}
+
+.auctionActions {
+    display: flex;
+    gap: 1rem;
+}
+
+.bidButton {
+    background: #2D5356;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.bidButton:hover {
+    background: #1a3a3d;
+    transform: translateY(-2px);
+}
+
+.withdrawButton {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.withdrawButton:hover {
+    background: #c12e2a;
+    transform: translateY(-2px);
+}
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+    padding: 1rem;
+    background: #f8d7da;
+    border-radius: 4px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.auctionCard {
+    position: relative;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.editForm input,
+.editForm textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.editForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.formActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.saveButton {
+    background: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editButton {
+    background: #17a2b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.deleteButton {
+    background: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auctionDetails p span {
+    font-weight: 600;
+    color: #2D5356;
+}
+.emptyState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.emptyContent {
+    max-width: 500px;
+}
+
+.emptyIcon {
+    font-size: 4rem;
+    color: #2D5356;
+    margin-bottom: 1.5rem;
+}
+
+.emptyTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2D3748;
+}
+
+.emptyText {
+    color: #718096;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.createButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    background: #2D5356;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.createButton:hover {
+    background: #1F3E40;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .profileContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .profileContainer {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 1rem;
+    }
+    
+    .navLink {
+        padding: 0.75rem 1.25rem;
+        white-space: nowrap;
+    }
+    
+    .active::before {
+        width: 100%;
+        height: 3px;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainContent {
+        padding: 1.5rem;
+    }
+    
+    .auctionActions {
+        flex-direction: column;
+    }
+    
+    .bidButton, .withdrawButton {
+        width: 100%;
+    }
+}
+
+.productImageContainer {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.productDetails {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+}
+
+.productName {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.productDescription {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.productPrice {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2D5356;
+}
+
+.productStatus {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+}
+
+.auctionEndTime {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.highestBid {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #D09423;
+    margin-top: 0.5rem;
+}
+
+.actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.editButton,
+.deleteButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.editButton {
+    background-color: #2D5356;
+    color: white;
+    border: none;
+}
+
+.editButton:hover {
+    background-color: #1a3a3d;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}

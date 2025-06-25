@@ -1,0 +1,62 @@
+.profile-banner {
+    background-color: #2D5356;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.profile-content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.profile-title {
+    font-size: 2rem;
+    font-family:
+        Inter,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+        color: whitesmoke;
+}
+
+.profile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    opacity: .2;
+}
+
+.breadcrumbs {
+    display: flex;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.5rem;
+}
+
+.breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+.breadcrumb-item:last-child {
+    font-weight: 600;
+}

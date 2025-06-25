@@ -1,0 +1,360 @@
+.reviewsContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Rating Summary */
+.ratingSummary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.ratingHeader h2 {
+    font-size: 2rem;
+    color: #2d5356;
+    margin-bottom: 1.5rem;
+}
+
+.ratingOverview {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stars {
+    color: #d09423;
+    font-size: 1.8rem;
+}
+
+.ratingMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ratingMeta span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d5356;
+}
+
+.ratingMeta small {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Review Form */
+.reviewForm {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.reviewForm h3 {
+    font-size: 1.5rem;
+    color: #2d5356;
+    margin-bottom: 1.5rem;
+}
+
+.ratingInput {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.star {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+}
+
+.star:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
+
+.star.active {
+    color: #d09423;
+    animation: starBounce 0.4s ease;
+}
+
+@keyframes starBounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.ratingValue {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-left: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 120px;
+}
+
+.submitButton {
+    background: #d09423;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submitButton:hover {
+    background: #b6801e;
+}
+
+.submitButton:disabled {
+    background: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Reviews List */
+.reviewsList {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.review {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reviewHeader i {
+    font-size: 2rem;
+    color: #2d5356;
+}
+
+.reviewHeader h4 {
+    font-weight: 600;
+    color: #2d5356;
+    margin-bottom: 0.25rem;
+}
+
+.reviewHeader time {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.reviewStars {
+    color: #d09423;
+    margin-bottom: 0.5rem;
+}
+
+/* Similar Products ///////////////////////////////////////////////////// */
+.similarProducts {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sectionHeader {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.sectionHeader h2 {
+    font-size: 1.75rem;
+    color: #2D5356;
+    line-height: 1.2;
+}
+
+.sectionHeader a {
+    background: #D09423;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sectionHeader a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(208, 148, 35, 0.4);
+}
+
+.productsGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.productCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    position: relative;
+    padding: 1rem;
+    background: #f8f9fa;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.cardImage img :hover {
+    transform: scale(1.05);
+}
+
+.discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #2d5356;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.favorite {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #2d5356;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;  
+}
+
+.cardBody {
+    padding: 1rem;
+}
+
+.cardBody h3 {
+    color: #2d5356;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceRow span {
+    color: #d09423;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.cart {
+    background: #2d5356;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .ratingOverview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .productsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ratingInput {
+        flex-wrap: wrap;
+    }
+
+    .ratingValue {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}

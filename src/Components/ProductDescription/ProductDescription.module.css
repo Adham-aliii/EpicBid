@@ -1,0 +1,52 @@
+/* ===== ProductDescription.module.css ===== */
+
+.descriptionSection {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  font-family: 'Inter', sans-serif;
+}
+
+.description {
+  color: #2d5356; 
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.aboutThisItem {
+  background-color: #ffffff; 
+  border-left: 4px solid #d09423; 
+  padding: 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease; 
+}
+
+.aboutThisItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.sectionTitle {
+  color: #2d5356; 
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #2d5356; 
+}
+
+.bulletList li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ===== Trending Products ===== */

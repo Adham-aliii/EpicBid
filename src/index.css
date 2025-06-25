@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import 'tailwindcss/utilities';
+
+/* @tailwind utilities; */
+
+/* @layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --csk-2d5356500: rgba(45, 83, 86, 1);
+  --gold: rgba(208, 148, 35, 1);
+} */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}

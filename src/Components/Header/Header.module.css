@@ -1,0 +1,70 @@
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 120px;
+    position: relative;
+    background-color: var(--gold);
+}
+
+.frame .div {
+    justify-content: center;
+    gap: 25px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame .text-wrapper{
+    position: relative;
+    width: fit-content;
+    font-family: "inter-regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: normal;
+}
+.frame .dev-2{
+    gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame .img-wrapper{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff33;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.frame .img{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 7 px;
+    left: 7 px;
+}
+
+.frame .dev-3{
+    justify-content: center;
+    gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+.frame .uil-phone{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: normal;
+    flex: 0 0 auto;
+    font-family: "inter-regular", Helvetica;
+}

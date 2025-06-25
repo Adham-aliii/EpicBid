@@ -1,0 +1,329 @@
+/* ProfileAddress.module.css */
+
+/* Base Styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.profileContainer {
+    display: flex;
+    width: 80%;
+    max-width: 1400px;
+    min-height: 70vh;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Enhanced Sidebar */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(145deg, #2D5356 0%, #1a3a3d 100%);
+    padding: 2rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 0;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navLink i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.navLink:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+    color: white !important;
+    background: rgba(208, 148, 35, 0.15) !important;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #D09423;
+}
+
+/* Enhanced Main Content */
+/* ProfileAddress.module.css */
+.mainContent {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mainHeader {
+    font-size: 2rem;
+    color: #2d3436;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.addressCard {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.addressCard:hover {
+    transform: translateY(-2px);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f1f3f5;
+}
+
+.cardHeader h2 {
+    font-size: 1.5rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.addressForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.inputField {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.inputField:focus {
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+    outline: none;
+}
+
+.countrySelect {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.editButton {
+    background: #4dabf7;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.editButton:hover {
+    background: #339af0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(77, 171, 247, 0.15);
+}
+
+.saveButton {
+    background: #40c057;
+}
+
+.saveButton:hover {
+    background: #37b24d;
+}
+
+.addButton {
+    background: #7950f2;
+    padding: 0.75rem 1.5rem;
+}
+
+.addButton:hover {
+    background: #6741d9;
+}
+
+.addressDetails {
+    padding: 1.5rem 0;
+    line-height: 1.6;
+}
+
+.addressDetails p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0.75rem 0;
+}
+
+.addressDetails p:first-child {
+    font-weight: 500;
+    color: #212529;
+    font-size: 1.2rem;
+}
+
+.noAddress {
+    text-align: center;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.noAddress p {
+    color: #868e96;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.countryField {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.disabledInput {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.citySelect {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainContent {
+        padding: 1.5rem;
+    }
+
+    .mainHeader {
+        font-size: 1.75rem;
+    }
+
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .editButton,
+    .addButton {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .profileContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .profileContainer {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 1rem;
+    }
+
+    .navLink {
+        padding: 0.75rem 1.25rem;
+        white-space: nowrap;
+    }
+
+    .active::before {
+        width: 100%;
+        height: 3px;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainContent {
+        padding: 1.5rem;
+    }
+
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .editButton {
+        align-self: flex-end;
+    }
+}

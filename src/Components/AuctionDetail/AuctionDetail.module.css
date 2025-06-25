@@ -1,0 +1,1010 @@
+.productDetailContainer {
+    width: 100%;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.backLink {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.backLink:hover {
+    background-color: #f0f0f0;
+    transform: translateX(-5px);
+}
+
+.backLink i {
+    color: #d09423;
+    font-size: 1.25rem;
+}
+
+.backLink span {
+    color: #2d5356;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Image section styling */
+.imageSection {
+    position: relative;
+    width: 100%;
+}
+
+/* Main image container with consistent aspect ratio */
+.mainImageWrapper {
+    width: 100%;
+}
+
+.mainImageContainer {
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imageFrame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.navArrow {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navArrow:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    background-color: #f8f8f8;
+}
+
+/* Thumbnail styling */
+.thumbnailContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #e5e5e5;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    margin: 0.25rem;
+}
+
+.thumbnailFrame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activeThumbnail {
+    border-color: #d09423;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product details styling */
+.detailsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Discount banner styling */
+.discountBanner {
+    background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+}
+
+.discountBanner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.discountIcon {
+    color: #d09423;
+}
+
+/* Product information styling */
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.titleDescContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.productName {
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.productDescription {
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.priceDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.priceContainer {
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.originalPrice {
+    opacity: 0.7;
+}
+
+/* Product details container */
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.codeStockContainer {
+    width: 100%;
+    gap: 0.5rem;
+}
+
+/* Stock status styling */
+.stockStatus {
+    display: flex;
+    align-items: center;
+}
+
+/* Ratings styling */
+.ratingsContainer {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.starRating {
+    display: flex;
+    align-items: center;
+}
+
+.activeStar {
+    color: #f59e0b;
+}
+
+.inactiveStar {
+    color: #d1d5db;
+}
+
+/* Actions container */
+.actionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Quantity selector styling */
+.quantitySelector {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+}
+
+.quantityButton {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quantityButton:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.05);
+}
+
+/* Buttons container */
+.buttonsContainer {
+    width: 100%;
+}
+
+/* Action buttons styling */
+.actionButtons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.buyNowButton,
+.addCartButton {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.buyNowButton {
+    background-color: #d09423;
+}
+
+.buyNowButton:hover {
+    background-color: #b88420;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(208, 148, 35, 0.3);
+}
+
+.addCartButton {
+    background-color: #2d5356;
+}
+
+.addCartButton:hover {
+    background-color: #244446;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(45, 83, 86, 0.3);
+}
+
+/* Icon buttons container */
+.iconButtonsContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Icon buttons styling */
+.iconButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.iconButton:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
+    border-color: #d1d5db;
+}
+
+/* Coupon section styling */
+.couponSection {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+/* Coupon container styling */
+.couponContainer {
+    display: flex;
+    max-width: 550px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Left side of coupon with scalloped edge */
+.couponLeft {
+    width: 35%;
+    background-color: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Scalloped edge for coupon */
+.couponLeft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background-image: radial-gradient(circle at 0 50%, transparent 20px, #333 0);
+    background-size: 20px 40px;
+    background-position: 10px;
+    background-repeat: repeat-y;
+}
+
+/* Watermark text styling */
+.couponWatermark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.2;
+    transform: rotate(-30deg);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Right side of coupon */
+.couponRight {
+    width: 65%;
+    background-color: #333;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Scalloped edge for right side */
+.couponRight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background-image: radial-gradient(circle at 100% 50%, transparent 20px, #333 0);
+    background-size: 20px 40px;
+    background-position: 0;
+    background-repeat: repeat-y;
+    right: -10px;
+}
+
+/* Inline coupon section styling */
+.inlineCouponSection {
+    width: 100%;
+}
+
+.inlineCouponContainer {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Left side of inline coupon */
+.inlineCouponLeft {
+    width: 35%;
+    background-color: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Scalloped edge for inline coupon */
+.inlineCouponLeft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15px;
+    background-image: radial-gradient(circle at 0 50%, transparent 15px, #333 0);
+    background-size: 15px 30px;
+    background-position: 7.5px;
+    background-repeat: repeat-y;
+}
+
+/* Coupon repeated text styling */
+.couponRepeatedText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.2;
+    transform: rotate(-30deg);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Right side of inline coupon */
+.inlineCouponRight {
+    width: 65%;
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Reviews section styling */
+.reviewsSection {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.ratingBar {
+    position: relative;
+    height: 14px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ratingBarBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+}
+
+.ratingBarFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #d09423;
+    transition: width 0.3s ease;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tagIcon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .productDetailContainer {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .productDetailContainer {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .contentGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .backLink {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .productDetailContainer {
+        padding: 0.75rem;
+        margin: 0.5rem auto;
+    }
+
+    .backLink {
+        padding: 0.4rem 0.75rem;
+    }
+
+    .backLink span {
+        font-size: 1rem;
+    }
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    line-height: 1;
+}
+
+/* Main container */
+.reviews-container {
+    display: flex;
+    align-items: center;
+    gap: 40px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Left section - Reviews summary */
+.reviews-summary {
+    border-right: 1px solid rgba(142, 142, 142, 1);
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 18px;
+    width: 417px;
+}
+
+.reviews-title {
+    color: #000000;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
+
+.rating-overview {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    color: rgba(0, 0, 0, 1);
+    justify-content: start;
+}
+
+.rating-stars {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2px;
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.star-rating {
+    color: #d09423;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.rating-score {
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 24px;
+}
+
+.rating-count {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    align-self: start;
+    margin-top: 8px;
+}
+
+/* Right section - Rating breakdown */
+.rating-breakdown {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    justify-content: center;
+    width: 674px;
+}
+
+.rating-row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.rating-row:last-child {
+    margin-bottom: 0;
+}
+
+.star-label {
+    align-self: stretch;
+    z-index: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80px;
+}
+
+.rating-bar-bg {
+    border-radius: 12px;
+    background-color: rgba(204, 204, 204, 0.4);
+    align-self: stretch;
+    z-index: 0;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 500px;
+    flex-shrink: 0;
+    height: 14px;
+    position: relative;
+}
+
+.rating-bar-fill {
+    border-radius: 12px;
+    background-color: #d09423;
+    position: absolute;
+    z-index: 1;
+    height: 14px;
+    left: 0;
+    top: 0;
+}
+
+.percentage {
+    align-self: stretch;
+    z-index: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    text-align: right;
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+    .rating-breakdown {
+        max-width: 100%;
+    }
+
+    .rating-row {
+        max-width: 100%;
+    }
+
+    .reviews-summary {
+        border-right: none;
+        border-bottom: 1px solid rgba(142, 142, 142, 1);
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rating-bar-bg {
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews-title {
+        font-size: 32px;
+    }
+
+    .rating-score {
+        font-size: 20px;
+    }
+
+    .star-rating {
+        font-size: 24px;
+    }
+
+    .star-label,
+    .percentage {
+        font-size: 18px;
+    }
+
+    .rating-bar-bg {
+        width: calc(100% - 120px);
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.tabNavigation {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.tabLink {
+    padding: 1rem 1.5rem;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tabLink:hover {
+    color: #d09423;
+}
+
+.tabLink.active {
+    color: #d09423;
+    border-bottom-color: #d09423;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    position: relative;
+}
+
+.disabled:hover {
+    color: #666;
+}
+
+.disabledTooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.disabledTooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.disabled:hover .disabledTooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tabLink i {
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tabNavigation {
+        padding: 1.5rem 0;
+        margin: 1.5rem 0;
+    }
+
+    .tabContainer {
+        gap: 1rem;
+    }
+
+    .tabLink {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabNavigation {
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+    .tabContainer {
+        gap: 0.75rem;
+    }
+
+    .tabLink {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Slick Slider Styles */
+.mainSlider {
+    width: 100%;
+}
+
+.thumbnailSlider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slickArrow {
+    color: #333;
+    font-size: 16px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.slickArrow:hover {
+    background: #f5f5f5;
+}
+
+.slick-current .thumbnailImage {
+    border: 2px solid #d09423;
+}
+
+/* Adjust the active thumbnail */
+.slick-center .thumbnailImage {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.thumbnailImage {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.thumbnailImage:hover {
+    opacity: 1;
+}
+
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.loadingSpinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #d09423;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.loadingText {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
