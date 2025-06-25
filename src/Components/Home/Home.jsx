@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Home.module.css';
-import frame1 from '../../assets/imgs/frame1.png';
-import frame2 from '../../assets/imgs/frame2.png';
-import frame3 from '../../assets/imgs/frame3.png';
+import frame1 from '../../assets/imgs/Frame1.png';
+import frame2 from '../../assets/imgs/Frame2.png';
+import frame3 from '../../assets/imgs/Frame3.png';
 import pintrest1 from '../../assets/imgs/pintrest1.jpg';
 import pintrest2 from '../../assets/imgs/pintrest2.jpg';
 import pintrest3 from '../../assets/imgs/pintrest3.jpg';
@@ -12,8 +12,6 @@ import Advantages from '../Advantages/Advantages';
 import Newcollection from '../Newcollection/Newcollection';
 import FearturedCategories from '../FearturedCategories/FearturedCategories';
 import corner from '../../assets/imgs/Corner.png';
-import CustomersFrequentlyUsed from '../CustomersFrequentlyUsed/CustomersFrequentlyUsed';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import FlashSale from '../FlashSale/FlashSale';
 import ClientTalks from '../ClientTalks/ClientTalks';
@@ -31,21 +29,7 @@ export default function Home() {
         console.log('Added to favorites:', productId);
     };
 
-    // async function getRecentProducts() {
-
-    //     try {
-    //         let { data } = await axios.get('https://ecommerce.routemisr.com/api/v1/products')
-    //         console.log(data.data);
-    //         setProducts(data.data)
-
-    //     } catch (error) {
-    //         console.error("Error fetching recent products:", error);
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     getRecentProducts()
-    // }, [])
+    
 
 
     const products = [
