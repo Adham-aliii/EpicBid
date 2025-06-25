@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Checkout.module.css';
+import styles from './CheckOut.module.css';
 import { useCart } from '../../Context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import Profile from '../Profile/Profile';

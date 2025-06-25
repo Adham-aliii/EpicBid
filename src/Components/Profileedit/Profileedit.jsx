@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import styles from './ProfileEdit.module.css';
+import styles from './Profileedit.module.css';
 import { UserContext } from '../../Context/UserContext';
 
 export default function ProfileEdit() {
