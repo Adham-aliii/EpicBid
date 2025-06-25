@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ProfileOrders.module.css';
-import cornerr from '../../assets/imgs/cornerr.png';
+import cornerr from '../../assets/imgs/Cornerr.png';
 
 export default function ProfileOrders() {
     const orders = [

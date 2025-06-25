@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './ClientTalks.module.css';
 import man from '../../assets/imgs/man.png';
-import girl from '../../assets/imgs/girl.JPG';
-import Girl2 from '../../assets/imgs/Girl2.JPG';
-import Boy2 from '../../assets/imgs/Boy2.JPG';
+import girl from '../../assets/imgs/girl.jpg';
+import Girl2 from '../../assets/imgs/Girl2.jpg';
+import Boy2 from '../../assets/imgs/Boy2.jpg';
 
 export default function ClientTalks() {
     // Static testimonial data
